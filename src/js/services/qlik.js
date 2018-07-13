@@ -9,12 +9,12 @@
  */
 var service = function($q, $rootScope, app) {
 	var me = this;
-			
+	var prefix = window.location.pathname.substr( 0, window.location.pathname.toLowerCase().lastIndexOf( "/extensions" ) + 1 );
 	me.openModels = [];
 
 	me.config = {
 		host: window.location.hostname,
-		prefix: '@@ph-prefix',
+		prefix: prefix,
 		port: window.location.port,
 		id: '@@ph-id',
 		isSecure: window.location.protocol === "https:"
