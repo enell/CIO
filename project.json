@@ -13,12 +13,12 @@
 		"baseUrl": "http://localhost:4848/resources"
 	},
 	"local2": {
-		"host": "usrad-jvs02.qliktech.com",
-		"port": 443,
+		"host": "rd-jnl-mashup.rdlund.qliktech.com",
+		"port": "",
 		"prefix": "/",
-		"id": "c42983aa-068b-48f4-adcb-517d074857e1",
-		"scriptsUrl": "https://localhost:3000/",
-		"baseUrl": "https://usrad-jvs02.qliktech.com/resources"
+		"id": "0fc6144a-de2f-44a9-a0d1-e8fdf2f84295",
+		"scriptsUrl": "../extensions/cio/",
+		"baseUrl": "../../resources"
 	},
 	"staging": {
 		"host": "",

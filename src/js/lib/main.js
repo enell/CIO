@@ -26,8 +26,9 @@ require([
 	window.qlik = qlik;
 	qlik.setOnError( function ( error ) {
 		if (!angular.isUndefined(error) && error.code == 16) {
-			location.reload(false);
+			// location.reload(false);
 		} else {
+			console.log('Failed to connect with engine')
 			console.log(error);
 		}
 	} );

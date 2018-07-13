@@ -1,6 +1,6 @@
 {
 	"name": "CIO",
-	"main": "index.html",
+	"main": "cio.html",
 	"version": "0.0.3",
     "description": "CIO Dashboard",
 	"window": {

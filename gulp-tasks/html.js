@@ -3,7 +3,8 @@ module.exports = function (gulp, plugins, project) {
 			return gulp.src([
 				'src/js/directives/**/*.html',
 				'src/views/*',
-				'src/index.html'
+				'src/index.html',
+				'cio.qext'
 			], {base: "src/."})			
 		.pipe(plugins.replace(/@@ph-baseHref/g, project.server.baseHref))
 		.pipe(plugins.replace(/@@ph-host/g, project.server.host))

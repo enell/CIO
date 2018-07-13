@@ -1,0 +1,11 @@
+{
+	"type": "mashup",
+	"name": "cio",
+	"description": "",
+	"author": "Qlik",
+	"keywords": "qlik-sense, mashup",
+	"dependencies": {
+		"qlik-sense": ">=1.0.x"
+	},
+	"preview":"thumbnail.jpg"
+}

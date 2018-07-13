@@ -13,15 +13,17 @@ var service = function($q, $rootScope, app) {
 	me.openModels = [];
 
 	me.config = {
-		host: '@@ph-host',
+		host: window.location.hostname,
 		prefix: '@@ph-prefix',
-		port: '@@ph-port',
-		id: '@@ph-id'
+		port: window.location.port,
+		id: '@@ph-id',
+		isSecure: window.location.protocol === "https:"
 	};
 
 	me.config.isSecure = (me.config.port==443) ? true : false;
 	
-	me.openApp = function () {		
+	me.openApp = function () {
+		app.log(JSON.stringify(me.config, null, 2));
 		var deferred = $q.defer();
 		me.app = qlik.openApp(me.config.id, me.config);
 		deferred.resolve(true);
