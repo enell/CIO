@@ -8,7 +8,7 @@
  * # controller.management
  */
 
-var controller = ($scope, $rootScope, $location, $injector, qlik, api, app, ga) => {
+var controller = ($scope, $rootScope, $location, $injector, qlik, api, app) => {
 
 	var me = {};
 
@@ -78,11 +78,10 @@ var controller = ($scope, $rootScope, $location, $injector, qlik, api, app, ga) 
 		// For debugging selections uncommment the line below
 		// qlik.app.getObject('CurrentSelections', 'CurrentSelections');
 		qlik.app.getObject('kRJUp', 'kRJUp');
-		ga.pageview();
 	}
 
 	me.boot();
 };
-controller.$inject = ['$scope', '$rootScope', '$location', '$injector', 'qlik', 'api', 'app', 'ga'];
+controller.$inject = ['$scope', '$rootScope', '$location', '$injector', 'qlik', 'api', 'app'];
 angular.module('controller.management', [])
 	.controller('controller.management', controller);

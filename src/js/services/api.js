@@ -281,11 +281,6 @@ var service = function($q, $rootScope, app, qlik) {
 				break;
 		}	
 	}
-	
-	// Add Google tracking
-	me.ga = function (title) {
-		ga('send', 'event', 'button', 'click', title, 1);
-	};
 // });
 };
 angular.module('service.api', []);

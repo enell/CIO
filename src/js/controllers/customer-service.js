@@ -9,7 +9,7 @@
  * Controller of the myApp
  */
 
-var MyController = ($scope, $rootScope, api, app, ga) => {
+var MyController = ($scope, $rootScope, api, app) => {
 	var me = {};
 
 	me.init = () => {
@@ -64,7 +64,6 @@ var MyController = ($scope, $rootScope, api, app, ga) => {
 	me.boot = () => {
 		me.init();
 		me.events();
-		ga.pageview();
 		app.log('Customer Service loaded: ', 'Success!');
 	};
 
@@ -75,6 +74,6 @@ var MyController = ($scope, $rootScope, api, app, ga) => {
 
 	me.boot();
 };
-MyController.$inject = ['$scope', '$rootScope', 'api', 'app', 'ga'];
+MyController.$inject = ['$scope', '$rootScope', 'api', 'app'];
 angular.module('controller.customer-service', [])
 .controller('controller.customer-service', MyController);

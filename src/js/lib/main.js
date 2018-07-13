@@ -51,7 +51,6 @@ require([
 		'service.app',
 		'service.api',
 		'service.qlik',
-		'service.ga',
 		'factory.css'
 	])
 	angular.bootstrap( document, ["myApp", "qlik-angular"] );
